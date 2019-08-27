@@ -1,0 +1,32 @@
+.nav-container{
+  display: grid;
+  align-items: baseline;
+/*   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+  grid-template-columns: auto 50px auto;
+
+  nav:first-child{
+    grid-column:span 2;
+  }
+  nav:last-child{
+    text-align: right; 
+  }
+}
+
+
+
+nav{
+
+  ul{
+    list-style: none;
+    padding-left: 0;
+    li{
+      display: inline-block;
+      a{
+        img{
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}

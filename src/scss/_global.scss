@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap');
+
+// variables 
+
+$roboto-slab: 'Roboto Slab', serif;
 
 html,body{
   font-family: 'Montserrat', sans-serif;
 }
+.uppercase{
+  text-transform: uppercase;
+}
+
+$transition-s-02: all ease-out 0.2s;
+
+
+

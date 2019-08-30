@@ -1,5 +1,98 @@
-.hero{
+.hero {
   width: 100%;
   height: 760px;
-  background-color: grey;
+  background-color: #000;
+  position: relative;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+99,000000+99&0.65+0,0+39 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 0) 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 0) 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 0) 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
+    ;
+    position: absolute;
+  }
+
+
+  .main-container {
+    height: 100%;
+  }
+}
+
+.featured-movie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  max-width: 550px;
+  position: relative;
+  bottom: 76px;
+  color: #fff;
+
+  h3.highlight-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h1.movie-title {
+    font-family: $roboto-slab;
+    font-size: 110px;
+    margin: 0;
+    line-height: 0.8;
+    margin: 18px 0;
+  }
+
+  .cta-buttons {
+    button {
+      border-radius: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: #000;
+      width: 160px;
+      height: 40px;
+      color: #fff;
+      font-size: 16px;
+      text-align: left;
+      padding-left: 10px;
+      vertical-align: middle;
+      margin-right: 20px;
+      transition: $transition-s-02;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1;
+      cursor: pointer;
+      svg{
+        width: 17px;
+        height: 17px;
+        vertical-align: text-top;
+        margin-right: 5px;
+      }
+
+      &:hover{
+        background-color: #000;
+        padding-left: 14px;
+
+      }
+    }
+  }
+  .description-featured{
+    font-size: 18px;
+    h4{
+      margin-bottom: 2px;
+    }
+    p{
+      margin: 0;
+    }
+  }
 }

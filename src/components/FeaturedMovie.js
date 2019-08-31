@@ -41,7 +41,6 @@ class FeaturedMovie extends React.Component {
             this.setState({ lastMovie: data.results[index] })
           }
         });
-        console.log('state', this.state.lastMovie)
       })
       .catch(console.log)
   }

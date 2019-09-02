@@ -8,12 +8,14 @@ $roboto-slab: 'Roboto Slab', serif;
 html,body{
   font-family: 'Montserrat', sans-serif;
   background: #000;
+  overflow-x: hidden;
 }
 .uppercase{
   text-transform: uppercase;
 }
 
 $transition-s-02: all ease-out 0.2s;
+$transition-s-06: 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
 
 
 

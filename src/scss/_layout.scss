@@ -4,11 +4,17 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  &.reset-container{
+    margin: auto;
+    position: initial;
+  }
 }
 
 @media (min-width: 768px) {
   .main-container {
     max-width: 750px;
+    padding: 0;
   }
 }
 
@@ -21,6 +27,14 @@
 @media (min-width: 1200px) {
   .main-container {
     max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width:767px){
+  .main-container{
+    padding: 0;
   }
 }
 

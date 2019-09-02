@@ -58,7 +58,7 @@ class FeaturedMovie extends React.Component {
               <h1 className="movie-title roboto-slab">{this.state.lastMovie.title}</h1>
               <div className="cta-buttons">
                 <button className="play-btn"><PlayIcon />Reproducir</button>
-                <button><PlusIcon />Mi lista</button>
+                <button className="list-icon"><PlusIcon /><span>Mi lista</span></button>
               </div>
               <div className="description-featured">
                 <h4>Ver temporada 1</h4>

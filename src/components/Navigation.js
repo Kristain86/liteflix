@@ -4,6 +4,7 @@ import { ReactComponent as PlusIcon } from '../images/plus.svg';
 import { ReactComponent as BellIcon } from '../images/bell.svg';
 import { ReactComponent as User01 } from '../images/user-01.svg';
 import { ReactComponent as Arrow } from '../images/arrow.svg';
+import Modal from '../components/Modal';
 
 
 class Navigation extends React.Component {
@@ -24,7 +25,7 @@ class Navigation extends React.Component {
               <li><a href="./">Películas</a></li>
               <li><a href="./">Agregados recientemente</a></li>
               <li><a href="./">Mi lista</a></li>
-              <li><a href="./" className="add-movie-btn"><PlusIcon /><em>Agregar película</em></a></li>
+              <li><span className="add-movie-btn"><PlusIcon /><Modal/></span></li>
             </ul>
           </nav>
 
@@ -78,7 +79,7 @@ class Navigation extends React.Component {
                   <li><a href="./" ><label>Niños</label></a></li>
                 </ul>
               </li>
-              <li id="add-movie-xs"><a href="./" className="add-movie-btn hovered"><PlusIcon /><em>Agregar película</em></a></li>
+              <li id="add-movie-xs"><em className="add-movie-btn hovered"><PlusIcon /><Modal/></em></li>
               <li ><a href="./" ><label><b>Log out</b></label></a></li>
             </ul>
           </div>

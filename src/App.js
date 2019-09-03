@@ -6,6 +6,7 @@ import FeaturedMovie from './components/FeaturedMovie';
 import UpComingMovies from './components/UpComingMovies';
 import PopularMovies from './components/PopularMovies';
 
+
 function App() {
   return (
     <div className="App">

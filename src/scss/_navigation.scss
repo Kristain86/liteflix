@@ -21,17 +21,23 @@
   padding: 12px;
   border-radius: 25px;
   font-size: 16px;
-  width: 17px;
+  width: 16px;
   display: inline-block;
   height: 15px;
   line-height: 1;
   overflow: hidden;
   position: relative;
   transition: $transition-s-02;
+  cursor: pointer;
 
   &.hovered {
     width: 160px;
     text-decoration: none;
+    cursor: pointer;
+
+    .add-movie-action{
+      opacity: 1;
+    }
 
     em {
       font-size: 16px;
@@ -41,27 +47,37 @@
     }
   }
 
-
-
   svg {
     width: 17px;
     height: 17px;
     vertical-align: sub;
   }
 
-  em {
+  button.add-movie-action {
     display: initial;
     width: 150px;
     margin-left: 7px;
     position: absolute;
     opacity: 0;
     font-style: normal;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    top: 11px;
+    font-weight: 400;
+    left: 15px;
+    cursor: pointer;
+
+    &:visited, &:focus, &:active{
+      outline:none;
+    }
   }
 
   &:hover {
     width: 160px;
 
-    em {
+    button {
       opacity: 1;
     }
   }
@@ -81,6 +97,9 @@ nav {
       display: inline-block;
       padding-right: 20px;
       vertical-align: top;
+        @media(max-width:1200px){
+          padding-right: 10px;
+        }
 
       &:last-child {
         padding-right: 0;
@@ -95,10 +114,6 @@ nav {
 
         &.logo-liteflix {
           height: 27px;
-        }
-
-        &:hover {
-          /*   color: #dedede; */
         }
 
         img {
@@ -413,10 +428,9 @@ nav {
       }
 
     }
-
-
-
   }
+
+
 
   // menu
   #menuToggle {

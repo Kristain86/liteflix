@@ -22,7 +22,6 @@ class PopularMovies extends React.Component {
   }
 
   render() {
-    console.log(this.state.upComingMovies);
     const urlImg = 'https://image.tmdb.org/t/p/original/'
 
     return (

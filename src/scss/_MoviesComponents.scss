@@ -217,6 +217,12 @@
         margin: 5px 15px;
         height: 201px;
 
+        .overlay-movie{
+          .play-overlay{
+            margin-top: 35px;
+          }
+        }
+
         .hover-arrow{
           display: none;
         }
@@ -228,12 +234,18 @@
       margin-bottom: 15px;
     }
     .upcoming-list{
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 50% 50%;
       padding: 0 8px;
       li.next-movies.popular-movies{
         width: auto;
         margin: 0 5px 7px;
         height: auto;
+
+        .overlay-movie{
+          .upper-btns{
+            bottom:54px;
+          }
+        }
       }
     }
   }

@@ -10,8 +10,6 @@ import PopularMovies from './components/PopularMovies';
 function App() {
   return (
     <div className="App">
-      
-
       <FeaturedMovie />
       <UpComingMovies />
       <PopularMovies/>
